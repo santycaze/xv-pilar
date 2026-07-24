@@ -764,3 +764,18 @@ a {
     letter-spacing: 0;
   }
 }
+.dress-card p{
+
+    margin-bottom:12px;
+    line-height:1.5;
+
+}
+
+.dress-card strong{
+
+    color:var(--primary-dark);
+
+    font-weight:600;
+
+}
+
