@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Invitación a los 15 años de Pilar"
+  >
+
+  <title>XV Pilar | Invitación</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- PORTADA -->
+    <header class="hero">
+
+      <p class="hero-label">MIS QUINCE AÑOS</p>
+
+      <h1>
+        <span>XV</span>
+        Pilar
+      </h1>
+
+      <p class="subtitle">
+        Hay momentos inolvidables que se guardan para siempre.
+        Quiero compartir esta noche tan especial contigo.
+      </p>
+
+      <div class="hero-divider">
+        <span></span>
+        <span class="hero-star">✦</span>
+        <span></span>
+      </div>
+
+      <p class="event-date">
+        31 · 10 · 2026
+      </p>
+
+    </header>
+
+
+    <!-- CUENTA REGRESIVA -->
+    <section
+      class="section countdown-section"
+      aria-labelledby="countdown-title"
+    >
+
+      <p class="section-label">FALTA MUY POCO</p>
+
+      <h2 id="countdown-title">
+        Cuenta regresiva
+      </h2>
+
+      <div class="countdown" aria-live="polite">
+
+        <div class="countdown-item">
+          <span id="days">00</span>
+          <small>Días</small>
+        </div>
+
+        <div class="countdown-item">
+          <span id="hours">00</span>
+          <small>Horas</small>
+        </div>
+
+        <div class="countdown-item">
+          <span id="minutes">00</span>
+          <small>Minutos</small>
+        </div>
+
+        <div class="countdown-item">
+          <span id="seconds">00</span>
+          <small>Segundos</small>
+        </div>
+
+      </div>
+
+      <p id="countdown-message" class="countdown-message"></p>
+
+    </section>
+
+
+    <!-- FOTO -->
+    <section class="photo-section">
+
+      <div class="photo-frame">
+        <img
+          src="images/pilar.jpg"
+          alt="Pilar, protagonista de la celebración"
+          loading="lazy"
+        >
+      </div>
+
+    </section>
+
+
+    <!-- INFORMACIÓN -->
+    <section class="section event-info">
+
+      <p class="section-label">GUARDÁ LA FECHA</p>
+
+      <h2>Información del evento</h2>
+
+      <div class="info-grid">
+
+        <article class="info-card">
+          <div class="info-icon">📅</div>
+          <h3>Fecha</h3>
+          <p>Sábado 31 de octubre</p>
+          <span>2026</span>
+        </article>
+
+        <article class="info-card">
+          <div class="info-icon">🕘</div>
+          <h3>Hora</h3>
+          <p>21:00 horas</p>
+          <span>Te esperamos puntual</span>
+        </article>
+
+        <article class="info-card">
+          <div class="info-icon">📍</div>
+          <h3>Lugar</h3>
+          <p>Club Fuerza Aérea</p>
+          <span>Montevideo</span>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONFIRMACIÓN -->
+    <section
+      class="section confirmation-section"
+      id="confirmacion"
+    >
+
+      <p class="section-label">RSVP</p>
+
+      <h2>Confirmá tu asistencia</h2>
+
+      <p class="section-description">
+        Completá tus datos para ayudarnos a preparar cada detalle
+        de esta noche especial.
+      </p>
+
+      <form id="xvForm" class="confirmation-form">
+
+        <div class="form-group">
+          <label for="nombre">
+            Nombre y apellido
+          </label>
+
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Escribí tu nombre"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="asistencia">
+            ¿Vas a asistir?
+          </label>
+
+          <select
+            id="asistencia"
+            name="asistencia"
+            required
+          >
+            <option value="" selected disabled>
+              Seleccioná una opción
+            </option>
+
+            <option value="Sí">
+              Sí, voy a asistir
+            </option>
+
+            <option value="No">
+              No podré asistir
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="alimentacion">
+            Restricción alimenticia
+          </label>
+
+          <select
+            id="alimentacion"
+            name="alimentacion"
+          >
+            <option value="Ninguna">
+              Ninguna
+            </option>
+
+            <option value="Celíaco">
+              Celíaco/a
+            </option>
+
+            <option value="Diabético">
+              Diabético/a
+            </option>
+
+            <option value="Vegetariano">
+              Vegetariano/a
+            </option>
+
+            <option value="Vegano">
+              Vegano/a
+            </option>
+
+            <option value="Otra">
+              Otra
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="cancion">
+            Canción sugerida
+          </label>
+
+          <input
+            type="text"
+            id="cancion"
+            name="cancion"
+            placeholder="¿Qué canción no puede faltar?"
+          >
+        </div>
+
+        <button
+          type="submit"
+          id="submitButton"
+          class="primary-button"
+        >
+          <span class="button-text">
+            Enviar confirmación
+          </span>
+
+          <span
+            class="button-loader"
+            aria-hidden="true"
+          ></span>
+        </button>
+
+      </form>
+
+      <p
+        id="respuesta"
+        class="form-response"
+        role="status"
+        aria-live="polite"
+      ></p>
+
+
+      <!-- SPOTIFY -->
+      <div class="spotify-box">
+
+        <div class="spotify-icon">
+          ♪
+        </div>
+
+        <div class="spotify-content">
+          <h3>Ayudame a crear la playlist</h3>
+
+          <p>
+            Agregá la canción que quieras escuchar esa noche.
+          </p>
+        </div>
+
+        <a
+          class="spotify-button"
+          href="https://open.spotify.com/playlist/675A1nW5y7iEBPHnrIDfu5?si=PYwyWp3hTGm-BBQ7r2U59Q&pt=3e1b29eb8617a681e435c863747c1f38&pi=6UXIzr7HQJigX"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Abrir Spotify
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- UBICACIÓN -->
+    <section class="section map-section">
+
+      <p class="section-label">CÓMO LLEGAR</p>
+
+      <h2>Ubicación</h2>
+
+      <p class="section-description">
+        La celebración será en el Club Fuerza Aérea.
+      </p>
+
+      <div class="map-container">
+
+        <iframe
+          title="Ubicación del Club Fuerza Aérea"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.6433907315195!2d-56.045880924247676!3d-34.87874702285698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8615f347603b%3A0x3c68339f3f3ae3f8!2sClub%20Fuerza%20A%C3%A9rea!5e1!3m2!1ses-419!2suy!4v1768756738912!5m2!1ses-419!2suy"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+      </div>
+
+      <a
+        class="secondary-button"
+        href="https://www.google.com/maps/search/?api=1&query=Club+Fuerza+Aerea+Uruguay"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ver cómo llegar
+      </a>
+
+    </section>
+
+
+    <!-- CIERRE -->
+    <footer class="footer">
+
+      <div class="footer-symbol">✦</div>
+
+      <p class="footer-title">
+        Te espero
+      </p>
+
+      <p>
+        Gracias por ser parte de este momento tan especial.
+      </p>
+
+      <span>Con cariño, Pilar</span>
+
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
