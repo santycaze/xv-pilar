@@ -778,4 +778,28 @@ a {
     font-weight:600;
 
 }
+.location-note{
 
+    margin-top:20px;
+
+    padding:18px;
+
+    background:rgba(255,255,255,.75);
+
+    border:1px solid rgba(220,220,220,.8);
+
+    border-radius:18px;
+
+    color:var(--text-soft);
+
+    text-align:center;
+
+    line-height:1.7;
+
+}
+
+.location-note strong{
+
+    color:var(--primary-dark);
+
+}
