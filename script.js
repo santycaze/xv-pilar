@@ -166,3 +166,10 @@ if (form && respuesta && submitButton) {
     "No se encontraron todos los elementos del formulario."
   );
 }
+function copiarPrex(){
+
+    navigator.clipboard.writeText("123456789");
+
+    alert("Número de Prex copiado.");
+
+}
