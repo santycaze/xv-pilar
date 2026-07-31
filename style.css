@@ -803,3 +803,86 @@ a {
     color:var(--primary-dark);
 
 }
+.gift-card{
+
+    max-width:420px;
+
+    margin:35px auto 0;
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.75);
+
+    border:1px solid rgba(220,220,220,.8);
+
+    text-align:center;
+
+}
+
+.gift-icon{
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+
+}
+
+.gift-card h3{
+
+    font-family:var(--font-title);
+
+    color:var(--primary-dark);
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+.gift-name{
+
+    color:var(--text-soft);
+
+    margin-bottom:10px;
+
+}
+
+.gift-number{
+
+    font-size:1.4rem;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    color:var(--primary-dark);
+
+    margin-bottom:25px;
+
+}
+
+.copy-button{
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.copy-button:hover{
+
+    transform:translateY(-2px);
+
+}
