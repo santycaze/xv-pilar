@@ -168,7 +168,7 @@ if (form && respuesta && submitButton) {
 }
 function copiarPrex(){
 
-    navigator.clipboard.writeText("21100169"); 
+    navigator.clipboard.writeText("21100169");
 
     alert("Número de Prex copiado.");
 
